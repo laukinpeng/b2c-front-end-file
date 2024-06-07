@@ -1,0 +1,74 @@
+.elevating-health-experience img {
+	max-width: 9em;
+}
+.checkout-fields.bg-blue-1 input, .checkout-fields.bg-blue-1 select, .checkout-fields.bg-blue-1 textarea {
+	color: #2e4c5c;
+}
+.contact-us.checkout-fields .button-red.email {
+    background-image: url(../images/icon-email.png);
+background-repeat: no-repeat;
+background-position: 1em center;
+    background-size: 2em;
+	padding-left: 1.8em;
+}
+.contact-us.checkout-fields .button-green-wa {
+	padding-left: 1.8em;
+}
+.elevating-health-experience h2 {
+	font-size: 1.1em;
+}
+
+.partnership.flex-box > .flex-box {
+	border: 0.1em solid #4f9dd4;
+}
+.partnership.flex-box > .flex-box.no-border {
+	border: none;
+}
+.partnership.flex-box h3 {
+	color: #2e4c5c;
+	font-weight: 700;
+	margin-bottom: 1em;
+}
+@media (max-width: 1366px) {
+	.contact-us.checkout-fields .button-green-wa, .contact-us.checkout-fields .button-red.email {
+		background-size: 1.25em;
+		background-position: 0.5em center;
+	}
+	.elevating-health-experience.col3 > div:last-child {
+		flex-basis: 95%;
+	}
+}
+@media (max-width: 1024px) {
+	.elevating-health-experience.col3 > div:last-child {
+		flex-basis: 31%;
+	}
+}
+@media (max-width: 1023px) {
+	.elevating-health-experience.col3 > div:last-child {
+		flex-basis: 95%;
+	}
+}
+@media (max-width: 430px) {
+	.contact-us.checkout-fields.gap-2.pad-2 {
+		gap: 1em;
+		padding: 1em;
+	}
+	.contact-us.checkout-fields .flex-box.col2.gap-1 {
+		flex-direction: column;
+	}
+	.contact-us.checkout-fields textarea {
+		margin-bottom: 2em;
+	}
+	.contact-us.checkout-fields .send-message {
+		flex-direction: column;
+	}
+	.contact-us.checkout-fields .button-green-wa, .contact-us.checkout-fields .button-red.email {
+		height: 3em;
+	}
+	.elevating-health-experience.col3.flex-box > div {
+		flex-basis: 95%;
+	}
+	.partnership.flex-box.col2 > div {
+		flex-basis: 95%;
+	}
+}

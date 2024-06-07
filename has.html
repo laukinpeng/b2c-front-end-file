@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+<style>
+h2, .subtitle {
+    margin: 0 0 1.5rem 0;
+}
+.header-group.s ~ .header-group:has(h2):has(.subtitle) h2 {
+margin: 0 0 0.2rem 0;
+}
+</style>
+</head>
+
+<body>
+<div class="header-group s">
+  <h2>Blog Post Title</h2>
+</div>
+<div class="header-group">
+  <h2>Test</h2>
+  <div class="subtitle">asa</div>
+</div>
+<div class="header-group">
+  <h2>Blog Post Title</h2>
+  <div class="subtitle"> This is a subtitle </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,89 @@
+/* CSS Document */
+.health-centre-page .category-content-header {
+	height: 20em;
+	text-align: left;
+}
+.health-centre-page-category .health-centre.no-banner > div:last-child {
+	flex-basis: initial;
+}
+.health-centre-page-category .category-content-header > div > div > div {
+	width: 50%;
+	display: inline-block;
+}
+.health-centre-page-category .category-content-header h2 {
+	font-size: 4em;
+}
+.health-centre-page-category .category-content-header p {
+	font-size: 1em;
+}
+.health-centre-page-category.nutrition .category-content-header h2 {
+	color: #496146;
+}
+.health-centre-page-category.nutrition .category-content-header {
+	background: url("../images/health-centre/category/nutrition/banner-main-bg-2.png"), url("../images/health-centre/category/nutrition/banner-main-bg-0.png"), url("../images/health-centre/category/nutrition/banner-main-bg-1.png");
+	background-position: right center, left bottom, right bottom, right center;
+	background-size: 50%, 20em, 30em;
+	background-repeat: no-repeat;
+}
+.health-centre-article h4 {
+	font-size: 3em;
+}
+.health-centre-article h2 {
+	margin-bottom: 0.5em;
+	margin-top: 2em;
+}
+.health-centre-article p {
+	font-size: 1em;
+	line-height: 1.5em;
+}
+.author a {
+	color: #243271;
+	font-weight: 700;
+	text-decoration: underline;
+}
+.health-centre-related-articles.flex-box.col4 {
+	
+}
+@media (max-width:1024px) {
+	.health-centre-article h4 {
+		font-size: 2em;
+	 }
+	.health-centre-page-category.nutrition .category-content-header {
+		background-position: top right, left bottom, right bottom, right center;
+		background-size: 50%, 20em, 30em;
+		background-repeat: no-repeat;
+	}
+}
+@media (max-width:767px) {
+	.health-centre-page-category .category-content-header h2 {
+		font-size: 3em;
+	}
+	.health-centre-page-category.nutrition .category-content-header {
+		background-position: top right, left bottom, right bottom, right center;
+		background-size: 14em, 15em, 14em;
+		background-repeat: no-repeat;
+	}
+	.health-centre-page-category .category-content-header > div > div > div {
+		width: 100%;
+		text-align: center;
+		margin: 0 auto;
+	}
+	.health-centre-page-category .category-content-header > div > div > div > p {
+		display: inline-block;
+		max-width: 28em;
+	}
+	.health-centre-page-category.nutrition .category-content-header {
+		height: 50vh;
+	}
+	.health-centre-article > .flex-box {
+		flex-direction: column;
+	}
+	.health-centre-related-articles.flex-box.col4 > * {
+		flex-basis: 48%;
+	}
+}
+@media (max-width:420px) {
+	.health-centre-related-articles.flex-box.col4 > * {
+		flex-basis: 100%;
+	}
+}

@@ -1,0 +1,290 @@
+.orders-tracking .content .desc .img-holder {
+	flex-basis: 6em;
+	flex-shrink: 0;
+}
+.orders-tracking .content .item > .desc {
+	border-bottom: 0.1em solid #edeef1;
+}
+.orders-tracking .content .item > .desc:last-child {
+	border-bottom: none;
+}
+.orders-tracking .status {
+	color: #243271;
+    border: 0.1em dashed #243271;
+    border-radius: 0.5em;
+    padding: 0.1em 0.5em;
+}
+.orders-tracking .status.active {
+	background: #000;
+	border-style: solid;
+	color: #fff;
+}
+.orders-tracking .status.topay {
+	color: #AD2831;
+	border-color: #AD2831;
+}
+.orders-tracking .status.topay.active {
+	background: #AD2831;
+	color: #fff;
+}
+.orders-tracking .status.toship {
+	color: #4f9dd4;
+	border-color: #4f9dd4;
+}
+.orders-tracking .status.toship.active {
+	background: #4f9dd4;
+	color: #fff;
+}
+.orders-tracking .status.toreceive {
+	color: #FC9E4F;
+	border-color: #FC9E4F;
+}
+.orders-tracking .status.toreceive.active {
+	background: #FC9E4F;
+	color: #fff;
+}
+.orders-tracking .status.delivered {
+	color: #307351;
+	border-color: #307351;
+}
+.orders-tracking .status.delivered.active {
+	background: #307351;
+	color: #fff;
+}
+.orders-tracking .status.cancelled {
+	color: #000;
+	border-color: #000;
+}
+.orders-tracking .status.cancelled.active {
+	background: #000;
+	color: #fff;
+}
+.orders-tracking .status.returnrefund {
+	color: #E71D36;
+	border-color: #E71D36;
+}
+.orders-tracking .status.returnrefund.active {
+	background: #E71D36;
+	color: #fff;
+}
+.orders-tracking .order-summary-wrapper {
+	padding: 0.5em 1em;
+}
+.orders-tracking .store-icon {
+	width: 1.4em;
+}
+.orders-tracking .statuses-wrapper a {
+	padding-top: 1em;
+	padding-bottom: 1em;
+	font-weight: 700;
+}
+sup {
+	font-size: 0.6em;
+}
+.orders-tracking .variants {
+    border: 0.1em dashed #a0a3b5;
+	padding: 0.615em 1em 0.815em;
+}
+.orders-tracking .variants.location {
+    background: url(../images/icon-location.png) no-repeat 0.6em center;
+    background-size: 0.9em;
+	padding-left: 2.2em;
+}
+.orders-tracking .border-dashed {
+	border: 0.1em dashed #a0a3b5;
+}
+.orders-tracking .variants > span {
+	color: #a0a3b5;
+	font-size: 0.8em;
+	font-weight: 700;
+	letter-spacing: -0.04em;
+}
+.orders-tracking .th-date {
+	flex-basis: 6em;
+}
+.orders-tracking .th-tran {
+	flex-basis: 13em;
+}
+.orders-tracking .th-type {
+	flex-basis: 5em;
+}
+.orders-tracking .th-type.refund, .orders-tracking .th-tot.refund {
+	color: #307351
+}
+.orders-tracking .th-pmod {
+	flex-basis: 8em;
+}
+.orders-tracking .desc .th-tran a, .orders-tracking .desc .th-orde a {
+	display: block;
+	display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.wishlist {
+	width: 1.25em;
+	height: 1.25em;
+	right: 0.5em;
+	top: 0.5em;
+	background-size: cover;
+}
+.wishlist:hover {
+	cursor: pointer;
+}
+.wishlist.on {
+	background: url(../images/ico-wishlist-on.svg) no-repeat center center;
+}
+.wishlist.off {
+	background: url(../images/ico-wishlist-off.svg) no-repeat center center;
+}
+.orders-tracking.history .border-dashed .button-red {
+	line-height: 1em;
+	padding: 0.5em 0.5em 0.1em;
+}
+@media (max-width: 1050px) {
+	.orders-tracking .th-pmod {
+		display: none;
+	}
+}
+@media (max-width: 767px) {
+	.orders-tracking .content .item .order-summary-wrapper {
+		order: 2;
+		border-bottom-left-radius: 0.5em;
+		border-bottom-right-radius: 0.5em;
+	}
+	.orders-tracking .th-orde {
+		display: none;
+	}
+}
+@media (max-width: 660px) {
+	.statuses-wrapper.pad-1 {
+		max-width: calc(100vw - 2em);
+		position: relative;
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.statuses-wrapper a.results.fs-08 {
+		font-size: 0.9em!important;
+		font-weight: 700;
+		padding-top: 1em;
+		padding-bottom: 1em;
+	}
+	.statuses-wrapper > div {
+		position: relative;
+		left: -1em;
+		width: 100vw;
+		overflow: scroll;
+		-ms-overflow-style: none;
+		scrollbar-width: none;
+	}
+	.statuses-wrapper > div > div {
+		width: max-content;
+		padding-right: 1em;
+		padding-left: 1em;
+	}
+	.statuses-wrapper > div::-webkit-scrollbar {
+		display: none;
+	}
+	.orders-tracking .order-line-details.gap-025 {
+		flex-wrap: wrap;
+		gap: 0.5em;
+	}
+	.orders-tracking.history .order-line-details.gap-025 {
+		flex-wrap: nowrap;
+	}
+	.orders-tracking .order-line-details > div {
+		flex-basis: 98%;
+	}
+	.orders-tracking.history .order-line-details > div {
+		flex-basis: initial;
+	}
+	.orders-tracking .variants {
+		padding: 0.2em 0.5em 0.5em;
+	}
+	.orders-tracking.history .order-line-details > div.f-g1-s1:first-child {
+		flex-grow: 1;
+		flex-shrink: 1;
+	}
+	.orders-tracking.history .order-line-details > div.f-g1-s1:first-child > div.flex-box {
+		width: 100%!important;
+	}
+}
+@media (max-width: 600px) {
+	.orders-tracking .tl.gap-1 {
+		gap: 0.5em;
+	}
+	.orders-tracking .content .item .order-summary-wrapper .order-details {
+		flex-basis: 100%;
+	}
+	.orders-tracking .content .item .order-summary-wrapper .order-details .flex-box.jc-fe {
+		justify-content: left;
+		margin-top: 0.25em;
+	}
+	.orders-tracking .content .item .order-summary-wrapper .order-details .flex-box.jc-fe a {
+		background: #fff;
+		color: #243271;
+		padding: 0.5em 1em;
+		border-radius: 0.5em;
+	}
+	.orders-tracking .content .item .order-summary-wrapper {
+		padding-top: 1em;
+		padding-bottom: 1em;
+	}
+	.orders-tracking .tl > div.fs-08 {
+		font-size: 0.7em!important;
+	}
+	.orders-tracking .th-tran {
+		flex-basis: 12em;
+	}
+}
+@media (max-width: 435px) {
+	.orders-tracking .content .item > .desc.gap-1, .orders-tracking .deliveries.gap-1, .orders-tracking .shop-header.gap-1 {
+		gap: 0.5em;
+	}
+	.orders-tracking .shop-name > span.results.block-435 {
+		display: block;
+	}
+	.orders-tracking .th-vt {
+		display: none;
+	}
+	.orders-tracking.history .border-dashed .button-red {
+		display: none;
+	}
+	.orders-tracking.orders-tracking.history a.border-dashed > div.fw-800 {
+		font-size: 0.8em;
+	}
+}
+@media (max-width: 398px) {
+	.orders-tracking .content .item > .desc {
+		flex-direction: column;
+	}
+	.orders-tracking .deliveries {
+		flex-direction: column;
+	}
+	.orders-tracking .shop-header .store-icon-wrapper {
+		display: none;
+	}
+	.orders-tracking .order-line-details .qty.f-g0-s0 {
+		flex-grow: 1;
+	}
+	.orders-tracking .content .item > .desc.tl {
+		flex-direction: row;
+	}
+	.orders-tracking .tl.gap-1, .orders-tracking .content .item > .desc.tl.gap-1 {
+		gap: 0.25em;
+	}
+	.orders-tracking .th-type.f-g0-s1 {
+		flex-shrink: 0;
+	}
+	.orders-tracking .th-tot.f-g1-s0 {
+		flex-basis: 6.5em;
+
+	}
+	.orders-tracking.history .shop-header.gap-1 {
+		gap: 0.25em;
+	}
+	.orders-tracking .status.fs-08 {
+		font-size: 0.7em!important;
+	}
+
+}

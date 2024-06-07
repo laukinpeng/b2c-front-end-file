@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+<style>
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+}
+#myElement {
+    
+}
+	.myElement {
+		width: 100px;
+    background: #000;
+	}
+	.myElement.active {
+		background: red;
+	}
+</style>
+</head>
+
+<body class="body">
+<div style="height: 200px">&nbsp;</div>
+<div id="myElement1" class="myElement" style="height: 500px"></div>
+<div id="myElement2" class="myElement" style="margin-top: 20px; height: 1000px"></div>
+<div id="myElement3" class="myElement" style="margin-top: 20px; height: 1000px"></div>
+<div style="height: 5000px">&nbsp;</div>
+</body>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+	var computedFontSize = window.getComputedStyle(document.getElementById("myElement1")).fontSize;
+	computedFontSize = computedFontSize.replace(/\D/g,'');
+	console.log(computedFontSize);
+	var headerheight = computedFontSize * 6;
+	console.log(headerheight)
+	
+	
+	function myFunction(element) {
+		var pos;
+		pos = document.getElementById(element).getBoundingClientRect();
+		console.log(element, "top:" + pos.top, "bottom:" + pos.bottom);
+		if ((pos.top <= headerheight) && (pos.bottom > headerheight))  {
+			document.getElementById(element).classList.add('active');
+		} else  {
+			document.getElementById(element).classList.remove('active');
+		}
+	}
+	
+	window.onscroll = function() {
+		document.querySelectorAll('body > .myElement').forEach(div => {
+			myFunction(div.id);
+		})
+	};
+
+});
+</script>
+</html>

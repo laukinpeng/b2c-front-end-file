@@ -1,0 +1,128 @@
+/* CSS Document */
+.pharmacy-main-banners-wrapper {
+  max-width: 83em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+.pharmacy-main-banners > *:first-child {
+  /*background: #000;
+  /*height: 20em;*/
+  flex-basis: 69.445%;
+  flex-shrink: 1;
+}
+.pharmacy-main-banners .tns-ovh, .pharmacy-main-banners .tns-inner, .banners-slider .slider-item, .banners-slider .slider-item .card {
+  height: 100%;
+}
+.pharmacy-main-banners .banners-slider {
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+.banners-slider .slider-item .card {
+  background-size: 106% !important;
+}
+.pharmacy-main-banners > div.flex-box a.card {
+	padding-bottom: 45.24%;
+	background-size: cover!important;
+}
+.featured-brand-slider .slider-item .card > img  {
+	margin-left: auto;
+	margin-right: auto;
+}
+.pharmacy-main-banners.main-banner-filter .tns-outer {
+	height: 20em;
+}
+@media (max-width: 1167px) {
+  .pharmacy-main-banners > *:first-child {
+    flex-basis: 64%;
+  }
+  .banners-slider .slider-item .card {
+    background-size: 132% !important;
+  }
+}
+@media (max-width: 1024px) {
+	.banners-slider .slider-item .card {
+  		background-size: 127% !important;
+	}
+	.tns-controls > button {
+		height: 2em;
+		width: 2em;
+	}
+	.tns-controls > button[data-controls=next] {
+		background-size: 0.6em;
+	}
+	.tns-controls > button[data-controls=prev] {
+		background-size: 0.6em;
+	}
+}
+@media (max-width: 767px) {
+	
+}
+@media (max-width: 640px) {
+	.pharmacy-main-banners.flex-box {
+		display: block;
+	}
+	.pharmacy-main-banners > *:first-child {
+		height: 18em;
+		margin-bottom: 1em;
+	}
+	.banners-slider .slider-item .card {
+		background-size: 47em !important;
+	}
+	.pharmacy-main-banners > .flex-box.fd-c {
+		flex-direction: row;
+	}
+	.pharmacy-main-banners > div.flex-box a.card {
+		padding-bottom: 22%;
+	}
+}
+@media (max-width: 560px) {
+	.pharmacy-main-banners > *:first-child {
+		height: 15em;
+	}
+	.banners-slider .slider-item .card {
+		background-size: 36em !important;
+	}
+	.pharmacy-main-banners-wrapper {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.pharmacy-main-banners > .tns-outer, .pharmacy-main-banners > .flex-box.fd-c {
+		padding-left: 0.5em!important;
+		padding-right: 0.5em!important;
+	}
+	.pharmacy-main-banners > div.flex-box a.card {
+		padding-bottom: 32%;
+	}
+	.pharmacy-main-banners > div.flex-box a.card.fb-50 {
+		flex-basis: 70%;
+		flex-shrink: 0;
+	}
+	.pharmacy-main-banners .tns-controls {
+		display: none;
+	}
+}
+@media (max-width: 410px) {
+	.pharmacy-main-banners > *:first-child {
+		height: 13em;
+	}
+	.banners-slider .slider-item .card {
+		background-size: 32em !important;
+	}
+}
+@media (max-width: 359px) {
+	.pharmacy-main-banners > *:first-child {
+		height: 13em;
+	}
+	.banners-slider .slider-item .card {
+		background-size: 28em !important;
+	}
+}
+@media (max-width: 319px) {
+	.pharmacy-main-banners > *:first-child {
+		height: 12em;
+	}
+	.banners-slider .slider-item .card {
+		background-size: 25em !important;
+	}
+}

@@ -1,0 +1,269 @@
+/* CSS Document */
+.pharmacy-page-category .health-centre.no-banner > div:last-child {
+	flex-basis: initial;
+}
+.pharmacy-page-category .category-content-header > div > div > div {
+	width: 50%;
+	display: inline-block;
+}
+.pharmacy-page-category .category-content-header h2 {
+	font-size: 4em;
+}
+.pharmacy-page-category .category-content-header p {
+	font-size: 1em;
+}
+.pharmacy-page-category.nutrition .category-content-header h2 {
+	color: #496146;
+}
+.pharmacy-page-category.influenza .category-content-header h2 {
+	color: #fff;
+}
+.pharmacy-category-filter .filter  {
+	flex-basis: 300px;
+}
+.pharmacy-category-filter .filter > div  {
+	background: #fff;
+	padding: 1em;
+	border-radius: 0.5em;
+}
+.pharmacy-category-filter .filter h2 {
+	font-size: 1.2em;
+	padding-bottom: 0.5em;
+	border-bottom: 1px solid #4f9dd4;
+	margin-bottom: 0.5em;
+}
+.pharmacy-category-filter .filter input[type=text] {
+	background-image: url(../images/magnifier-with-a-heart.svg);
+    background-repeat: no-repeat;
+    background-size: 1em;
+    background-position: 1em center;
+    border: 0;
+    padding: 0.5em 0.5em 0.5em 2.5em;
+    border-radius: 2em;
+	font-size: 0.8em;
+	width: 100%;
+}
+.pharmacy-category-filter .filter .cb-item label {
+	font-size: 0.8em;
+	color: #2e4c5c;
+}
+.pharmacy-category-filter .filter .cb-item label > span {
+	font-size: 0.7em;
+	padding-left: 0.25em;
+	color: #a0a3b5;
+}
+.pharmacy-category-filter .filter .cb-item input[type=checkbox] {
+	margin: 0 0.25em 0 0;
+}
+.pharmacy-category-filter .filter .filter-search {
+	margin-bottom: 1em;
+}
+
+.pharmacy-category-filter .filter div.multiple-selection .cb {
+	overflow: scroll;
+	max-height: 8.8em;
+}
+.pharmacy-category-filter .filter div.multiple-selection .cb > * {
+	border: none;
+}
+
+.pharmacy-page-category.nutrition .category-content-header {
+	background: url("../images/health-centre/category/nutrition/banner-main-bg-2.png"), url("../images/health-centre/category/nutrition/banner-main-bg-0.png"), url("../images/health-centre/category/nutrition/banner-main-bg-1.png");
+	background-position: right center, left bottom, right bottom, right center;
+	background-size: 50%, 20em, 30em;
+	background-repeat: no-repeat;
+}
+.pharmacy-page-category.influenza .category-content-header {
+	background: url("../images/health-services/influenza-banner.jpg") right center no-repeat #71d38f;
+	background-size: contain;
+}
+.pharmacy-page-category.nutrition .category-content-header.smaller {
+	background-size: 12em, 20em, 30em;
+}
+.pharmacy-page-category .category-content-header.smaller {
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+.pharmacy-page-category .category-content-header.smaller h2 {
+	font-size: 2.25em;
+}
+.accordion-category-container .ac-trigger {
+	padding-left: 0;
+	padding-right: 0;
+	padding-bottom: 0;
+	color: #2e4c5c;
+}
+.accordion-category-container .ac .ac-trigger::after {
+	right: 0;
+}
+.accordion-category-container .ac .ac-panel > ul {
+	margin-top: 0;
+}
+.accordion-category-container .ac .ac-panel > ul li a span {
+	font-size: 0.8em;
+	color: #2e4c5c;
+}
+.filter-results > .slider-item {
+	padding: 0;
+}
+#filter {
+	display: none;
+}
+.product-intro h2 {
+	font-size: 1.5em;
+	color: #243271;
+}
+.float-buy {
+	box-shadow: 0em -0.2em 0.5em rgb(0 0 0 / 5%);
+	transform:  translateY(6.5em);
+	transition: ease transform 0.5s;
+}
+.float-buy.active {
+	transform:  translateY(0);
+}
+.float-buy h2 {
+	font-size: 1.5em;
+}
+.product-lightbox {
+	flex-basis: 25%;
+}
+.pharmacy-page-product .content p {
+	    font-size: 1em;
+    line-height: 1.5em;
+}
+.hot-links-overview {
+	background-image: url("../images/online-parmacy/icon-overview.svg");
+}
+.hot-links-description {
+	background-image: url("../images/online-parmacy/icon-description.svg");
+}
+.hot-links-precaution {
+	background-image: url("../images/online-parmacy/icon-precaution.svg");
+}
+.hot-links-quicktips {
+	background-image: url("../images/online-parmacy/icon-quicktips.svg");
+}
+.hot-links-missed-dosage {
+	background-image: url("../images/online-parmacy/icon-missed-dosage.svg");
+}
+.hot-links-faq {
+	background-image: url("../images/online-parmacy/icon-faq.svg");
+}
+.hot-links-sideeffects {
+	background-image: url("../images/online-parmacy/icon-side-effects.svg");
+}
+.vendor-tab {
+	z-index: 103;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.pharmacy-page-category.generic .category-content-header {
+    background: url("../images/online-parmacy/cat-bg-1.jpg"), url(../images/online-parmacy/cat-bg-2.jpg), #ff9400;
+    background-position: left center, right bottom;
+    background-size: 10em, 10em;
+    background-repeat: no-repeat;
+}
+.pharmacy-page-category.generic .category-content-header * {
+	color: #fff;
+}
+@media (max-width:1024px) {
+	.pharmacy-page-category.nutrition .category-content-header {
+		background-position: top right, left bottom, right bottom, right center;
+		background-size: 50%, 20em, 30em;
+		background-repeat: no-repeat;
+	}
+}
+@media (max-width: 1023px) {
+	.pharmacy-category-filter .filter {
+		flex-basis: 240px;
+	}
+}
+@media (max-width: 900px) {
+	/*.pharmacy-category-filter .filter {
+		display: none;
+	}*/
+	.bar-white .results, .view-sort a > span:first-child {
+		display: none;
+	}
+	#filter {
+		display: initial;
+	}
+}
+@media (max-width: 850px) {
+	.filter-results.flex-box.col4.fw > * {
+		/*flex-basis: 30%;*/
+	}
+}
+@media (max-width:767px) {
+	.pharmacy-page-category .category-content-header h2 {
+		font-size: 3em;
+	}
+	.pharmacy-page-category.nutrition .category-content-header {
+		background-position: top right, left bottom, right bottom, right center;
+		background-size: 14em, 15em, 14em;
+		background-repeat: no-repeat;
+	}
+	.pharmacy-page-category .category-content-header > div > div > div {
+		width: 100%;
+		text-align: center;
+		margin: 0 auto;
+	}
+	.pharmacy-page-category .category-content-header > div > div > div > p {
+		display: inline-block;
+		max-width: 28em;
+	}
+	.pharmacy-page-category.nutrition .category-content-header {
+		height: 50vh;
+	}
+}
+@media (max-width: 670px) {
+	.pharmacy-main-banners.main-banner-filter .tns-outer {
+		height: 17em;
+	}
+	.banners-slider .slider-item .card {
+    	background-size: 42em!important;
+	}
+}
+@media (max-width: 590px) {
+	.filter-results.flex-box.col4.fw > * {
+		flex-basis: 40%;
+	}
+	.pharmacy-main-banners.main-banner-filter .tns-outer {
+		height: 15em;
+	}
+	.banners-slider .slider-item .card {
+    	background-size: 38em!important;
+	}
+	.view-sort a#view-grid, .view-sort a#view-list {
+		display: none;
+	}
+}
+@media (max-width:560px) {
+	.pharmacy-category-filter .pharmacy-main-banners > .tns-outer {
+		padding-left: 0!important;
+		padding-right: 0!important;
+	}
+	.bar-white h2 {
+		font-size: 0.9em;
+	}
+}
+@media (max-width: 490px) {
+	
+	.pharmacy-main-banners.main-banner-filter .tns-outer {
+		height: 12em;
+	}
+	.banners-slider .slider-item .card {
+    	background-size: 30em!important;
+	}
+}
+@media (max-width: 380px) {
+	.filter-results.flex-box.col4.fw > * {
+		flex-basis: 100%;
+	}
+	.pharmacy-main-banners.main-banner-filter .tns-outer {
+		height: 10em;
+	}
+	.banners-slider .slider-item .card {
+    	background-size: 25em!important;
+	}
+}

@@ -1,0 +1,14 @@
+<div className="row text-center justify-content-center">
+  <div className="d-flex col-8 col-sm-6 mb-4 justify-content-center"> <img src={basepath('/img/unsuccessful-payment.png')} style={{ maxWidth: '250px' }} /> </div>
+  <h2 className="text-primary mb-3 color-blue-1"> {t('unsuccessfulPaymentTitle')} <br />
+    {t('unsuccessfulPaymentSubTitle')} </h2>
+  <p className="mb-0 text-black">{t('unsuccessfulPaymentDescription1')}</p>
+  <p className="mb-0 text-black"> {t('unsuccessfulPaymentDescription2')} <a
+            className="text-black text-decoration-underline"
+            href={t('contactEmailLink', { ns: 'common' })}
+          > {t('contactEmail', { ns: 'common' })} </a> {t('unsuccessfulPaymentDescription3')} <a
+            className="text-black text-decoration-underline"
+            href={t('contactPhoneNumberLink', { ns: 'common' })}
+          > {t('contactPhoneNumber', { ns: 'common' })}. </a> </p>
+  <div className="d-flex justify-content-center mt-4"> <a className="btn bg-red text-white" href={basepath(`/b2b/checkout/${uuid}`)}> {t('tryAgainButton', { ns: 'common' })} </a> </div>
+</div>

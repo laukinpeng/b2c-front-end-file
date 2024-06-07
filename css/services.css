@@ -1,0 +1,105 @@
+.services-search-banner {
+	height: 7.5em;
+	background: rgb(159,224,226);
+	background-image: url("../images/services-search-bg-2.png"), url("../images/services-search-bg-1.png"), url("../images/services-search-bg-3.jpg"), radial-gradient(circle, rgba(159,224,226,1) 0%, rgba(105,188,194,1) 35%, rgba(67,146,159,1) 100%);
+	background-repeat: no-repeat;
+	background-position: left center, right center, center center, center center;
+	background-size: auto, auto, cover, cover;
+}
+.services-search-wrapper {
+	margin-top: -1.75em;
+}
+.services-search {
+	max-width: 50em;
+	align-items: stretch;
+	border-radius: 2em;
+	box-shadow: 0em 0.2em 0.3em rgb(0 0 0 / 35%);
+}
+.services-search-banner h2, .services-search-banner p {
+	color: #fff;
+}
+.services-search input, .services-search select {
+	color: fieldtext;
+}
+.services-search select#services {
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+}
+.services-search input#city {
+	border-radius: 0 0 0 0;
+}
+.services-search select#pax {
+	border-radius: 0;
+	flex-basis: 18em;
+}
+.services-search button.button-red {
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+	border-top-right-radius: 2em;
+	border-bottom-right-radius: 2em;
+	padding-left: 2em;
+	padding-right: 2em;
+}
+.services-search-banner p {
+		padding-bottom: 2em;
+	}
+@media (max-width: 680px) {
+	.services-search-wrapper.pad {
+		margin-top: 0;
+		padding: 0 0;
+	}
+	.services-search.gap-05.pad-05 {
+		border-radius: 0;
+		flex-wrap: wrap;
+		gap: 1em;
+		padding: 1em;
+	}
+	.services-search select#services {
+		flex-basis: 90%;
+		flex-grow: 1;
+		flex-shrink: 1;
+		border-top-left-radius: 0.5em;
+		border-top-right-radius: 0.5em;
+		border-bottom-left-radius: 0.5em;
+		border-bottom-right-radius: 0.5em;
+	}
+	.checkout-fields input#city {
+		flex-grow: 1;
+		flex-basis: 40%;
+		border-top-left-radius: 0.5em;
+		border-top-right-radius: 0.5em;
+		border-bottom-left-radius: 0.5em;
+		border-bottom-right-radius: 0.5em;
+	}
+	.services-search select#pax {
+		flex-basis: 9em;
+		flex-shrink: 0;
+		border-top-left-radius: 0.5em;
+		border-top-right-radius: 0.5em;
+		border-bottom-left-radius: 0.5em;
+		border-bottom-right-radius: 0.5em;
+	}
+	.services-search button.button-red {
+		flex-basis: 100%;
+		flex-shrink: 1;
+		border-radius: 0.5em;
+	}
+	.services-search-banner p {
+		padding-bottom: 0;
+	}
+	.services-search-banner {
+		background-position: -3em center, calc(100% + 3em) center, center center, center center;
+	}
+}
+@media (max-width: 520px) {
+	.services-search-banner {
+		background-position: -3em top, calc(100% + 3em) bottom, center center, center center;
+		background-size: 10em, 9em, cover, cover
+	}
+}
+@media (max-width: 400px) {
+	.services-search-banner p {
+		max-width: 14em;
+		margin: 0 auto;
+	}
+}

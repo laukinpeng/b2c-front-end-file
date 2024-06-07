@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+<style>
+	* {
+		box-sizing: border-box;
+		padding: 0;
+		margin: 0;
+	}
+	.flex-box {
+		display: flex;
+	}
+	.f-g1-s1 {
+		flex-grow: 1;
+		flex-shrink: 1;
+	}
+	.f-g0-s0 {
+		flex-grow: 0;
+		flex-shrink: 0;
+	}
+	.wrap {
+		max-width: 1000px;
+		margin: 0 auto;
+	}
+	.gap-1 {
+		gap: 1em;
+	}
+	
+	/* whatever below not in the dev */
+	.kiran > div {
+		flex-basis: 200px;
+		background: magenta;
+		height: 200px;
+	}
+	.column {
+		flex-basis: 300px;
+	}
+	.slider {
+		overflow: scroll;
+	}
+	.fullwidth {
+		width: 100%;
+	}
+</style>
+</head>
+
+<body>
+	<div class="wrap centralized">
+		<div class="flex-box gap-1">
+			<div class="f-g1-s1" style="background: red; height: 100vh">
+			<h1>Mengapa you balik rumah, sedangkan aku buat ni - CPO!</h1>
+			<div class="slider">
+				<div class="kiran flex-box gap-1">
+					<div class="f-g0-s0"><img class="fullwidth" src="https://cdn.shopify.com/s/files/1/1290/8299/products/All-test-rtk-oral-1s-front.jpg" alt /></div>
+					<div class="f-g0-s0"><img class="fullwidth" src="https://cdn.shopify.com/s/files/1/1290/8299/products/All-test-rtk-oral-1s-front.jpg" alt /></div>
+					<div class="f-g0-s0"><img class="fullwidth" src="https://cdn.shopify.com/s/files/1/1290/8299/products/All-test-rtk-oral-1s-front.jpg" alt /></div>
+					<div class="f-g0-s0"><img class="fullwidth" src="https://cdn.shopify.com/s/files/1/1290/8299/products/All-test-rtk-oral-1s-front.jpg" alt /></div>
+					<div class="f-g0-s0"><img class="fullwidth" src="https://cdn.shopify.com/s/files/1/1290/8299/products/All-test-rtk-oral-1s-front.jpg" alt /></div>
+					<div class="f-g0-s0"><img class="fullwidth" src="https://cdn.shopify.com/s/files/1/1290/8299/products/All-test-rtk-oral-1s-front.jpg" alt /></div>
+					<div class="f-g0-s0"><img class="fullwidth" src="https://cdn.shopify.com/s/files/1/1290/8299/products/All-test-rtk-oral-1s-front.jpg" alt /></div>
+					<div class="f-g0-s0"><img class="fullwidth" src="https://cdn.shopify.com/s/files/1/1290/8299/products/All-test-rtk-oral-1s-front.jpg" alt /></div>
+					<div class="f-g0-s0"><img class="fullwidth" src="https://cdn.shopify.com/s/files/1/1290/8299/products/All-test-rtk-oral-1s-front.jpg" alt /></div>
+				</div>
+			</div>
+			</div>
+			<div class="column f-g0-s0" style="background: blue; height: 100vh">
+			Test
+			</div>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en" class="smt-html">
+  <head>
+    <title>Custom HTML</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <style>
+      * {
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+      }
+
+      .smt-html {
+        height: 100%;
+      }
+
+      .smt-body {
+        margin: 0 auto;
+        height: 100%;
+      }
+
+      a,
+      a:visited,
+      a:active,
+      a:hover {
+        text-decoration: none;
+      }
+
+      .smt-modal {
+        padding: 0;
+        width: 100%;
+        max-width: 200px;
+        min-height: 200px;
+        margin: 0 auto;
+        text-align: center;
+        font-family: Helvetica, Arial, sans-serif;
+        position: relative;
+        border-radius: 5px;
+        background-color: #30ae7b;
+        background-repeat: no-repeat;
+        background-position: center center;
+      }
+
+      .smt-modal-inner {
+        margin: 0 auto;
+        width: 100%;
+        position: relative;
+        padding: 10px 15px;
+      }
+
+      .smt-input {
+        width: 100%;
+        margin-bottom: 10px;
+      }
+
+      .smt-close-bt,
+      .smt-close-icon {
+        z-index: 2;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: 700;
+        position: absolute;
+        right: 5px;
+        top: 5px;
+        font-size: 12px;
+        color: #fff;
+      }
+
+      .smt-img-div {
+        width: 100%;
+      }
+
+      .smt-img-div img {
+        width: 70%;
+        max-width: 100px;
+      }
+
+      .smt-h2 {
+        font-size: 12px;
+        font-weight: bold;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: center;
+        color: #ffffff;
+        display: inline-block;
+        margin: 10px 0;
+      }
+
+      .smt-button {
+        border-radius: 5px;
+        background-color: #f8f8f8;
+        border: 0;
+        width: auto;
+        min-width: 75px;
+        max-width: 150px;
+        height: auto;
+        font-size: 12px;
+        font-weight: bold;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 14px;
+        letter-spacing: normal;
+        text-align: center;
+        color: #30ae7b;
+        display: inline-block;
+        padding: 5px;
+        cursor: pointer;
+        overflow: hidden;
+      }
+    </style>
+  </head>
+  <body class="smt-body">
+    <div id="NC_background_color" class="smt-modal smt-edit-background-color">
+      <a id="NC_CLOSE_BUTTON" href="javascript:void(0);" class="smt-close smt-close-bt smt-edit-close-button NC_REMOVE"
+        >Close</a
+      >
+      <a id="NC_CLOSE_ICON" href="javascript:void(0);" class="smt-close smt-close-icon smt-edit-close-icon">X</a>
+      <div class="smt-modal-inner">
+        <div class="smt-img-div">
+          <img
+            id="NC_IMAGE" alt="Add text you want to displaye when the image does not get rendered"
+            src="https://cdnt.netcoresmartech.com/webmsg/banner/banner-add-to--cart2.png"
+            class="smt-edit-image"
+          />
+        </div>
+        <form id="NC_FORM1">
+          <h2 id="NC_TEXT_ONE" class="smt-h2 smt-edit-title">THERE IS SOMETHING LEFT<br />IN THE CART</h2>
+          <input
+            id="NC_INPUT_TEXT1"
+            type="text"
+            name="Email"
+            class="smt-input NC_NOT_ACTIVE NC_ACTIVE"
+            placeholder="Email"
+            data-attribute="EMAIL"
+          />
+          <div class="smt-cta-group callToAction">
+            <button type="button" id="NC_CTA_ONE" class="smt-button smt-edit-button smt-close">BUY</button>
+            <button type="button" id="NC_CTA_TWO" class="smt-button smt-edit-button smt-close">BUY2</button>
+          </div>
+        </form>
+      </div>
+      <div style="clear: both"></div>
+    </div>
+  </body>
+</html>

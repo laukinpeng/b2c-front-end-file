@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" class="smt-html">
+
+<head>
+  <title>Custom HTML</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <style>
+    * {
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+
+    .smt-html {
+      height: 100%;
+    }
+
+    .smt-body {
+      margin: 0 auto;
+      height: 100%;
+    }
+
+    .smt-modal {
+      position: relative;
+      flex-basis: 450px;
+      filter: drop-shadow(3px 3px 1px rgb(0 0 0 / 0.2));
+    }
+
+    .smt-modal:hover {
+      cursor: pointer;
+    }
+
+    .smt-close-icon {
+      z-index: 2;
+      position: absolute;
+      right: -14px;
+      top: -14px;
+      color: #fff;
+      background: #fff;
+      border-radius: 50%;
+      display: block;
+      padding: 5px;
+      border: 2px solid #243271;
+      filter: drop-shadow(1px 1px 1px rgb(0 0 0 / 0.4));
+    }
+
+    .smt-close-icon>svg {
+      display: block;
+      filter: drop-shadow(1px 1px 1px rgb(0 0 0 / 0.4));
+    }
+
+    .smt-overlay {
+      display: flex;
+      height: 100vh;
+      background: rgba(0, 0, 0, 0.5);
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .smt-img {
+      display: block;
+      width: 100%;
+      border-radius: 1em;
+    }
+  </style>
+</head>
+
+<body class="smt-body">
+  <div class="smt-overlay smt-close">
+    <div class="smt-modal smt-edit-background-color">
+      <a id="NC_CLOSE_ICON" href="javascript:void(0);" class="smt-close smt-close-icon smt-edit-close-icon">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M6 18L18 6M6 6l12 12" stroke="#243271" stroke-width="3" stroke-linecap="round"
+            stroke-linejoin="round" />
+        </svg>
+      </a>
+      <div id="NC_image_only" data-action-id="NC_image_only" data-action-is-prime="true"
+        data-action-link="https://www.doctoroncall.com.my/medicine/search-v2?searchTerm=289189560503&amp;utm_source=Epharmacy&amp;utm_medium=Banner_desktop&amp;utm_campaign=youth_day"
+        data-action-target="_blank">
+        <img class="smt-img" src="SDD_450.jpg" alt="" />
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

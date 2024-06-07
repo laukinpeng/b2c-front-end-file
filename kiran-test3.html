@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+	<style>
+		.scroller {
+			width: 100%;
+			background: blue;
+			overflow-x: scroll;
+			overflow-y: hidden;
+		}
+		.fb {
+			display: flex;
+			gap: 1em;
+		}
+		.fb > div {
+			flex-basis: 23%;
+			background: #000;
+			flex-shrink: 0;
+		}
+		.fb2 {
+			display: flex;
+			flex-direction: column;
+		}
+		.fb2 > div.img {
+			background-color: red;
+			flex-basis: 20%;
+			flex-grow: 0;
+			flex-shrink: 0;
+		}
+		.fb2 > div.img img {
+			width: 100%;
+		}
+		.fb2 > div.content {
+			background-color: teal;
+			flex-grow: 1;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="scroller">
+		<div class="fb">
+			<div class="fb2"><div class="img"><img src="https://marketplace.dev.doctoroncall.com/images/health-services/thumb-01.jpg" alt /></div><div class="content">Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content</div></div>
+			<div class="fb2"><div class="img"><img src="https://marketplace.dev.doctoroncall.com/images/health-services/thumb-01.jpg" alt /></div><div class="content">Content</div></div>
+			<div class="fb2"><div class="img"><img src="https://marketplace.dev.doctoroncall.com/images/health-services/thumb-01.jpg" alt /></div><div class="content">Content</div></div>
+			<div class="fb2"><div class="img"><img src="https://marketplace.dev.doctoroncall.com/images/health-services/thumb-01.jpg" alt /></div><div class="content">Content</div></div>
+			<div class="fb2"><div class="img"><img src="https://marketplace.dev.doctoroncall.com/images/health-services/thumb-01.jpg" alt /></div><div class="content">Content</div></div>
+			<div class="fb2"><div class="img"><img src="https://marketplace.dev.doctoroncall.com/images/health-services/thumb-01.jpg" alt /></div><div class="content">Content</div></div>
+		</div>
+	</div>
+</body>
+</html>

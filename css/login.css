@@ -1,0 +1,221 @@
+div.main-nav .flex-box > div:hover, #close-overlay:hover {
+	cursor: pointer;
+}
+.overlay > div {
+	min-width: 300px;
+}
+.overlay-header.br-05 {
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+}
+.overlay-title {
+	line-height: 1.2em;
+	letter-spacing: -0.04em;
+	font-weight: 700;
+}
+#overlay {
+	z-index: 20000; background: rgba(0,0,0,0.5);
+}
+#overlay-content-wrapper {
+	z-index: 20001; pointer-events: none;
+}
+#overlay-content-wrapper .overlay-content {
+	pointer-events: none;
+}
+#overlay-content-wrapper.active .overlay-content {
+	pointer-events: all;
+}
+#close-overlay {
+	width: 1em;
+}
+.sigin-signup-register input, .sigin-signup-register select {
+	border: 0;
+    padding: 1em 2em 1em 2.5em;
+    border-radius: 2em;
+    font-size: 0.8em;
+    width: 100%;
+    background-color: #f5f5f5;
+    background-position: left 1em center;
+    background-repeat: no-repeat;
+    background-size: 1.2em;
+}
+.sigin-signup-register select {
+	-webkit-appearance: none;
+  	-moz-appearance: none;
+	background-image: url(../images/down.svg);
+	background-size: 0.75em;
+	background-repeat: no-repeat;
+	background-position-x: 90%;
+	background-position-y: center;
+	padding-left: 1em;
+}
+.sigin-signup-register input:disabled::placeholder {
+	color: #A0A3B5;
+}
+.sigin-signup-register input#email, .sigin-signup-register input#email-reg {
+    background-image: url(../images/ico-email.svg);
+}
+.sigin-signup-register input#password {
+    background-image: url(../images/ico-password.svg);
+}
+.sigin-signup-register input#password:disabled {
+    background-image: url(../images/ico-password-d.svg);
+}
+.sigin-signup-register input#password-repeat {
+    background-image: url(../images/ico-password-repeat.svg);
+}
+.sigin-signup-register input#password-repeat:disabled {
+    background-image: url(../images/ico-password-repeat-d.svg);
+}
+.sigin-signup-register input#id {
+    background-image: url(../images/ico-id.svg);
+}
+.sigin-signup-register input#id:disabled {
+	background-image: url(../images/ico-id-d.svg);
+}
+.sigin-signup-register input#phone {
+    background-image: url(../images/ico-phone.svg);
+}
+.sigin-signup-register input#otp {
+    background-image: url(../images/ico-otp.svg);
+}
+.sigin-signup-register input#fullname {
+    background-image: url(../images/ico-name.svg);
+}
+.sigin-signup-register input#birthday {
+    background-image: url(../images/ico-dob.svg);
+}
+.sigin-signup-register input#birthday:disabled {
+    background-image: url(../images/ico-dob-d.svg);
+}
+.sigin-signup-register input#gender {
+    background-image: url(../images/ico-gender.svg);
+}
+.sigin-signup-register input#gender:disabled {
+    background-image: url(../images/ico-gender-d.svg);
+}
+.sigin-signup-register .eye {
+  top: 0;
+  bottom: 0;
+  right: 0.5em;
+  margin: auto 0;
+  width: 1em;
+  height: 1em;
+  background: url(../images/ico-eye-hidden.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.sigin-signup-register .eye.reveal {
+	background: url(../images/ico-eye.svg);
+}
+.sigin-signup-register #back:disabled {
+	background: #999;
+	border-color: #999;
+}
+.sigin-signup-register #back:disabled:hover {
+	cursor:not-allowed;
+}
+.overlay-content a {
+	text-decoration: underline;
+}
+.sigin-signup-register .button-email {
+	background:  url(../images/ico-email-w.svg) #243271 no-repeat 1em center;
+	background-size: 1.2em;
+}
+.sigin-signup-register .button-google {
+    font-weight: 700;
+    color: #fff;
+    border: 0.1em solid #4285F4;
+    background: url(../images/ico-google.svg) #4285F4 no-repeat 1em center;
+	background-size: 1.2em;
+    text-align: center;
+    border-radius: 0.5em;
+    padding: 0.5em;
+    font-size: 1em;
+}
+.sigin-signup-register .button-phone {
+    font-weight: 700;
+    color: #fff;
+    background: url(../images/ico-phone-white.svg) #AD2831 no-repeat 1em center;
+	background-size: 1.2em;
+    text-align: center;
+    border-radius: 0.5em;
+    padding: 0.5em;
+    font-size: 1em;
+}
+.sigin-signup-register hr {
+	height: 0.1em;
+	border-left: 0;
+	border-right: 0;
+	border-top: 0.1em dashed #999;
+}
+.bg-register {
+	background: url(../images/bg-register.jpg) no-repeat center center;
+	background-size:cover;
+	min-height: calc(100vh - 33em);
+}
+#reg-form {
+	width: 400vw;
+	transition: transform 0.5s ease;
+}
+#overlay-content-wrapper {
+	width: 600vw;
+	transition: all 0.5s ease;
+}
+#reg-form .overlay-body, #overlay-content-wrapper .overlay-body {
+	height: 25em;
+}
+#reg-form.step1 {
+	transform: translateX(0%);
+}
+#reg-form.step2 {
+	transform: translateX(-20%);
+}
+#reg-form.step3 {
+	transform: translateX(-40%);
+}
+#reg-form.step4 {
+	transform: translateX(-60%);
+}
+#reg-form.step5 {
+	transform: translateX(-80%);
+}
+#overlay-content-wrapper.step0 {
+	transform: translateX(0%);
+}
+#overlay-content-wrapper.step1 {
+	transform: translateX(-16.66%);
+}
+#overlay-content-wrapper.step2 {
+	transform: translateX(-33.33%);
+}
+#overlay-content-wrapper.step3 {
+	transform: translateX(-49.99%);
+}
+#overlay-content-wrapper.step4 {
+	transform: translateX(-66.66%);
+}
+#overlay-content-wrapper.step5 {
+	transform: translateX(-83.33%);
+}
+#reg-form .overlay-content, #overlay-content-wrapper .overlay-content {
+	width: 100%;
+	max-width: 25em;
+}
+.sigin-signup-register .shop-name {
+	scroll-margin: 6.15em;
+}
+@media (max-width: 410px) {
+	#reg-form > div, #overlay-content-wrapper > div {
+		padding-left: 1em;
+		padding-right: 1em;
+	}
+	.overlay-header.gap-1 {
+		gap: 0.5em;
+	}
+}
+@media (orientation: portrait) {
+	#reg-form {
+		height: calc(100vh - 14.3em);
+	}
+}
